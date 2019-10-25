@@ -20,10 +20,10 @@ def process_device(session, device, linear_fit, inpath, outpath, dataset, filena
     if padding > 0:
         # Change speed and pad
         # The -R to suppress dithering so that command produces identical results each time
-        command = [sox_cmd, '-R', infile, outfile, 'speed', f'{speed}','pad', f'{padding}s','0s']
+        command = [sox_cmd, '-D', '-R', infile, outfile, 'speed', f'{speed}','pad', f'{padding}s','0s']
     else:
         # change speed and trim
-        command = [sox_cmd, '-R', infile, outfile, 'speed', f'{speed}','trim', f'{-padding}s']
+        command = [sox_cmd, '-D', '-R', infile, outfile, 'speed', f'{speed}','trim', f'{-padding}s']
         # Note, the order of speed vs trim/pad makes a difference
         # I believe sox actually applies the speed transform after the padding.
         # but speed is so close to 1 and the padding so short that it will
