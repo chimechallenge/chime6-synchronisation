@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+
+# Copyright 2019 University of Sheffield (Jon Barker)
+# MIT License (https://opensource.org/licenses/MIT)
+
 """
 correct_signals_for_frame_drops.py
 
