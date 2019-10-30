@@ -39,14 +39,13 @@ Note, the tools are making the corrections according to data stored in `chime6_a
 cd $CHiME6_ROOT/../
 md5sum -c audio_md5sums.txt
 ```
-If your processing is successfully done, you'll finally get the following results:
+If your processing is successfully done, you'll get the following results:
 ```
 CHiME6/audio/train/S08_U02.CH3.wav: OK
 CHiME6/audio/train/S08_U03.CH3.wav: OK
 CHiME6/audio/dev/S09_U01.CH3.wav: OK
 CHiME6/audio/train/S19_U04.CH1.wav: OK
 CHiME6/audio/train/S05_U01.CH1.wav: OK
-:
 :
 ```
 
