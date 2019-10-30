@@ -26,14 +26,14 @@ def correct_transcription_for_clock_drift(session, linear_fit_data, in_path, out
     transcription = tu.load_transcript(session, in_path + '/' + dataset, convert=True)
 
     if session not in linear_fit_data:
-        print(f"WARNING: Linear fit data missing for session {session}")
+        print("WARNING: Linear fit data missing for session" + session)
     
     # Compute alignments for the TASCAM binaural mics
     pids = CHIME_DATA[session]['pids']
     for pid in pids:
         print(pid)
         if pid not in linear_fit_data[session]:
-            print(f"WARNING: Linear fit data mission for session {session} speaker {pid}")
+            print("WARNING: Linear fit data mission for session " + session + " speaker " + pid)
             return
         
         fit = linear_fit_data[session][pid]

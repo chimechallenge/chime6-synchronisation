@@ -83,23 +83,23 @@ def correct_all_devices(session, frame_drop_data, inpath, outpath):
 
     for device in devices:
         if device not in session_frame_drops:
-            print(f'WARNING: device {device} missing for session {session}')
+            print("WARNING: device " + device + " missing for session " + session)
             continue
 
         frame_drops = session_frame_drops[device]['edits']
         
         # Processing all 4 kinect channels for this device
         for chan in [1, 2, 3, 4]:
-            name = f"{session}_{device}.CH{chan}"
-            in_wav_fn = f"{inpath}/{dataset}/{session}_{device}.CH{chan}.wav"
-            out_wav_fn = f"{outpath}/{dataset}/{session}_{device}.CH{chan}.wav"
+            name = session + "_" + device + ".CH" + str(chan)
+            in_wav_fn = inpath + "/" + dataset + "/" + session + "_" + device + ".CH" + str(chan) + ".wav"
+            out_wav_fn = outpath + "/" + dataset + "/" + session + "_" + device + ".CH" + str(chan) + ".wav"
             fix_audio_files(in_wav_fn, out_wav_fn, frame_drops)
 
     # For binaural mics add symbolic links so that complete set of signals
     # is available in output dir
     for device in chime_data[session]['pids']:
-        in_wav_fn = f"{inpath}/{dataset}/{session}_{device}.wav"
-        out_wav_fn = f"{outpath}/{dataset}/{session}_{device}.wav"
+        in_wav_fn = inpath + "/" + dataset + "/" + session + "_" + device + ".wav"
+        out_wav_fn = outpath + "/" + dataset + "/" + session + "_" + device + ".wav"
         os.symlink(os.path.realpath(in_wav_fn), os.path.realpath(out_wav_fn))
 
 

@@ -37,7 +37,7 @@ def time_float_to_text(time_float):
     time_float %= 3600
     minutes = int(time_float/60)
     seconds = time_float % 60
-    return f'{hours}:{minutes:02d}:{seconds:05.2f}'
+    return '%d:%02d:%05.2f' % (hours, minutes, seconds)
 
 
 def load_transcript(session, root, convert=False):
@@ -45,7 +45,7 @@ def load_transcript(session, root, convert=False):
 
     session: recording session name, e.g. 'S12'
     """
-    with open(f'{root}/{session}.json') as f:
+    with open(root + "/" + session + ".json") as f:
                 transcript = json.load(f)
     if convert:
         for item in transcript:
@@ -77,5 +77,5 @@ def save_transcript(transcript, session, root, convert=False, challenge='CHIME5'
                 item['start_time'] = time_float_to_text(item['start_time'])
                 item['end_time'] = time_float_to_text(item['end_time'])
 
-    with open(f'{root}/{session}.json', 'w') as outfile:
+    with open(root + "/" + session + ".json", 'w') as outfile:
         json.dump(transcript_copy, outfile, indent=4)

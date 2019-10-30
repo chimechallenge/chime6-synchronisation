@@ -13,17 +13,17 @@ def process_device(session, device, linear_fit, inpath, outpath, dataset, filena
 
     padding = linear_fit['padding']
     speed = linear_fit['speed']
-    infile = f'{inpath}/{dataset}/{filename}.wav'
-    outfile = f'{outpath}/{dataset}/{filename}.wav'
-    sox_cmd = f'{sox_path}/sox'
+    infile = inpath + '/' + dataset + '/' + filename + '.wav'
+    outfile = outpath + '/' + dataset + '/' + filename + '.wav'
+    sox_cmd = sox_path + '/sox'
 
     if padding > 0:
         # Change speed and pad
         # The -R to suppress dithering so that command produces identical results each time
-        command = [sox_cmd, '-D', '-R', infile, outfile, 'speed', f'{speed}','pad', f'{padding}s','0s']
+        command = [sox_cmd, '-D', '-R', infile, outfile, 'speed', str(speed), 'pad', str(padding) + 's', '0s']
     else:
         # change speed and trim
-        command = [sox_cmd, '-D', '-R', infile, outfile, 'speed', f'{speed}','trim', f'{-padding}s']
+        command = [sox_cmd, '-D', '-R', infile, outfile, 'speed', str(speed), 'trim', str(-padding) + 's']
         # Note, the order of speed vs trim/pad makes a difference
         # I believe sox actually applies the speed transform after the padding.
         # but speed is so close to 1 and the padding so short that it will
@@ -46,19 +46,19 @@ def process_all_devices(session, linear_fit_data, inpath, outpath, sox_path):
     # (Or could insert pad 0 and scale 1 into json so that it is still processed through sox??)
     for device in devices:
         if device not in session_fits:
-            print(f'WARNING: device {device} missing for session {session}')
+            print('WARNING: device ' + device +  'missing for session' + session)
             continue
 
         linear_fit = session_fits[device]
         
         if device[0] == 'P':
             # Processing binaural mic signal
-            name = f"{session}_{device}"
+            name = session + '_' + device
             process_device(session, device, linear_fit, inpath, outpath, dataset, name, sox_path)
         elif device[0] == 'U':
             # Processing kinect signal
             for chan in [1, 2, 3, 4]:
-                name = f"{session}_{device}.CH{chan}"
+                name = session + '_' + device + '.CH' + str(chan)
                 process_device(session, device, linear_fit, inpath, outpath, dataset, name, sox_path)
 
 
