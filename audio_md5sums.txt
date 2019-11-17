@@ -63,6 +63,7 @@
 1fea80f59b8690548421cd3a1721d406  CHiME6/audio/train/S18_U03.CH4.wav
 2030bf1605ce90cf50e9d23d9ca8b6c8  CHiME6/audio/eval/S01_P03.wav
 20770b8b62290a25ca70860b47040c48  CHiME6/audio/train/S17_U01.CH3.wav
+21751310ae6a1b410552e92a5e897cc7  CHiME6/audio/train/S12_U03.CH2.wav
 2300ec8072590987e636432101836f4e  CHiME6/audio/train/S12_U01.CH4.wav
 235dce4e39b9a46a0378c8b6d1d854b4  CHiME6/audio/dev/S09_U04.CH4.wav
 237c0c3261adc4d3d51cb5e208193046  CHiME6/audio/train/S18_U04.CH2.wav
@@ -119,6 +120,7 @@
 38a5ba1dd9dca524c0acb6694ebe4b68  CHiME6/audio/train/S04_P12.wav
 39067c595b3a2e31288954426c9f097a  CHiME6/audio/train/S24_P56.wav
 39c297ed2bd13ec1d8fe10b2edf8edb3  CHiME6/audio/dev/S02_U01.CH4.wav
+39fb7a1f2c0c35427c19a15ec015b037  CHiME6/audio/train/S12_U03.CH3.wav
 3a3b0d96833fa4f9b9e29dd4a5f1a843  CHiME6/audio/train/S19_U04.CH2.wav
 3a5602d3e515b9211dd8c1070eeca92e  CHiME6/audio/dev/S09_U03.CH4.wav
 3b1d8e59a92c1649ca8a07a7cb728526  CHiME6/audio/train/S08_U03.CH1.wav
@@ -148,6 +150,7 @@
 4585fdb853fcdf4382770963e87e589a  CHiME6/audio/train/S18_U05.CH3.wav
 462be4211dbfb0548e31a92886536921  CHiME6/audio/train/S23_U03.CH3.wav
 4679aeef25de9922d7d99a5c0ab234c9  CHiME6/audio/eval/S01_P02.wav
+46bfb9493bd0797de33587a58ffc059c  CHiME6/audio/train/S12_U03.CH1.wav
 475ea205457a3b86221483e64a5635ae  CHiME6/audio/train/S16_U02.CH3.wav
 477e17037d7fb5a478f6f70e76b1fa9e  CHiME6/audio/train/S18_U06.CH3.wav
 47b5cfabcd0202cda9d7fc5fa15dba18  CHiME6/audio/train/S07_U05.CH1.wav
@@ -467,6 +470,7 @@ dde84b35455361378ceb5c5774f3fe37  CHiME6/audio/dev/S09_P27.wav
 ddf7bb3e377250d56ef08d7e5c6358b8  CHiME6/audio/train/S08_U05.CH3.wav
 dec5c703ddf5ecce94bd37fbc3d33804  CHiME6/audio/train/S08_U04.CH3.wav
 df03941920b1e1175f8340f6c8e8a053  CHiME6/audio/train/S17_U03.CH1.wav
+dfac7bdeec8c44f51d2adb937fbf0169  CHiME6/audio/train/S12_U03.CH4.wav
 e0833bf20ccd6c404a1a5d3f0217e50a  CHiME6/audio/train/S03_U01.CH3.wav
 e0e8eb1a5f2c0342ba9015bc2adc2c7c  CHiME6/audio/train/S05_U06.CH1.wav
 e121c3405ef50cd34aba432da15f2da5  CHiME6/audio/dev/S02_U01.CH1.wav
