@@ -50,10 +50,6 @@ a6862f3e0987a12bf22fb7a9b09d2b70  audio/dev/S09_U04.CH1.wav
 d8bffa08026cff8e0525e724ed8466d8  audio/dev/S09_U06.CH2.wav
 d731992620c5ce3fde0b3ec63954088d  audio/dev/S09_U06.CH3.wav
 1aeb49015b0f3879f661f868432338d5  audio/dev/S09_U06.CH4.wav
-0f8cd0a60d2b7d4ac8abb0084ab9ed94  audio/eval/S01_P01.wav
-4679aeef25de9922d7d99a5c0ab234c9  audio/eval/S01_P02.wav
-2030bf1605ce90cf50e9d23d9ca8b6c8  audio/eval/S01_P03.wav
-b2854b3fdde2d7a37ddfa2e7ca9c812e  audio/eval/S01_P04.wav
 8c43ec69d002d1293cbd1601f1d855dc  audio/eval/S01_U01.CH1.wav
 bf0d0e0625280c45815898f9a5c971ee  audio/eval/S01_U01.CH2.wav
 d7cf040d0d9b355d65afb394b26a8e65  audio/eval/S01_U01.CH3.wav
@@ -74,10 +70,6 @@ fc25806dfdfba160181cc29fc487aa27  audio/eval/S01_U05.CH4.wav
 1dd46fa5a647eca417b2830377c58b66  audio/eval/S01_U06.CH2.wav
 a67b7e813e427165cc5eb461df5a71f0  audio/eval/S01_U06.CH3.wav
 913ec859a1d6fee0818c5e437ce7699b  audio/eval/S01_U06.CH4.wav
-6931c060416b8ced227e7039b05048f8  audio/eval/S21_P45.wav
-f1bf7c1a283d07d501bfc0ce097aa37c  audio/eval/S21_P46.wav
-d6d6ab99568834ace71e2d3a9eb8b4f7  audio/eval/S21_P47.wav
-67a9dcf4d248feec907f6e244966ecd8  audio/eval/S21_P48.wav
 0d009c0484facac0b8632fef8ddc6ad9  audio/eval/S21_U01.CH1.wav
 99f753afd4b00f7962d6d9ab13a9f016  audio/eval/S21_U01.CH2.wav
 554abb6b26638b100aee1041b626a88a  audio/eval/S21_U01.CH3.wav
