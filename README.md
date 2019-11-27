@@ -51,10 +51,7 @@ CHiME6/audio/train/S05_U01.CH1.wav: OK
 
 ## Known issues
 
-- S01_U03 - missing because video software failed to record audio. (unrecoverable)
-- S01_U02 and SO1_U05 have not synchronised correctly. Should be recoverable but needs more time. e.g. experiments with declipping software or a better approach to the audio matching.
-- S05_U04 - missing, video software was stopped and started, so have two avi files. Could probably fix this but it would require another bit of work. It's in the training data so might be easier to just drop it if we are pressed for time.
-  
-
+- S01_U03 - missing because video software failed to record any audio. (unrecoverable)
+- S05_U04 - missing, video software was temporarily stopped during recording.
 
 
