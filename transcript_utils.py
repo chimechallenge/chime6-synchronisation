@@ -4,6 +4,7 @@
 # MIT License (https://opensource.org/licenses/MIT)
 
 import json
+import datetime
 
 CHIME5_JSON = 'chime5.json'  # Name of the CHiME5 json metadata file
 
@@ -33,12 +34,9 @@ def time_text_to_float(time_string):
 
 def time_float_to_text(time_float):
     """Convert tramscript time from float to text format."""
-    hours = int(time_float/3600)
-    time_float %= 3600
-    minutes = int(time_float/60)
-    seconds = time_float % 60
-    return '%d:%02d:%05.2f' % (hours, minutes, seconds)
-
+    # Milliseconds are rounded to 2 dp.
+    time = datetime.datetime.min + datetime.timedelta(seconds=time_float+0.005)
+    return time.strftime('%H:%M:%S.%f')[:-4]
 
 def load_transcript(session, root, convert=False):
     """Load final merged transcripts.
